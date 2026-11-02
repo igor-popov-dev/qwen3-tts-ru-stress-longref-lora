@@ -1,0 +1,20 @@
+{
+  "format_version": 1,
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "base_revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+  "parent_adapter": "https://huggingface.co/sknyazev/qwen3-tts-12hz-1.7b-ru-stress-gguf/tree/main/lora",
+  "continued_training_date": "2026-09-29",
+  "release_date": "2026-11-03",
+  "weights_unchanged_from_trained_checkpoint": true,
+  "configuration_changes": "Local filesystem paths replaced with public model/dataset identifiers; descriptive provenance added. Numeric and target-module settings unchanged.",
+  "bytes": 34908456,
+  "tensor_count": 392,
+  "sha256": {
+    "adapter.safetensors": "891493351fb43f766c28f3ac69ed51814f306974dcea3fdab0f9f6d64128759c",
+    "adapter.json": "27315ce049cfadd13b02bde3692b45dc92e45557f548e599e05d1f4d498211f6"
+  },
+  "license": "Apache-2.0",
+  "parent_revision": "e644ae00257fdd4db0e51b11057370dff6be8bc2",
+  "parent_weights_sha256": "702338d0e81ef8d04715ebd19ebe5eaf43b83446c04ee37f1a9108a9235f2b99",
+  "validated_merged_mlx_weights_sha256": "18519923258d3f4d0cabaa05b6ce17097879e89436ea4f55578eac963eb5eedc"
+}

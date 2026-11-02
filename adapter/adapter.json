@@ -1,0 +1,13 @@
+{
+  "r": 16,
+  "alpha": 32,
+  "target_modules": "layers\\.\\d+\\.(self_attn\\.(q|k|v|o)_proj|mlp\\.(gate|up|down)_proj)",
+  "base": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "applied_to": "talker.model",
+  "init": "sknyazev/qwen3-tts-12hz-1.7b-ru-stress-gguf/lora",
+  "lr": 5e-05,
+  "layout_st_frac": 0.0,
+  "data": "istupakov/russian_librispeech",
+  "base_revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+  "description": "Continued training with 9–60 s same-reader references and block-text ICL layout"
+}

@@ -1,0 +1,34 @@
+qwen3-tts-ru-stress-longref-lora
+Copyright 2026 Igor Popov (long-reference continued training and release scripts).
+
+This adapter is a continued-training derivative of:
+  sknyazev/qwen3-tts-12hz-1.7b-ru-stress-gguf, lora/ (Apache License 2.0)
+  https://huggingface.co/sknyazev/qwen3-tts-12hz-1.7b-ru-stress-gguf
+  Training implementation and research: sknyazev / voicy contributors
+  https://github.com/olluorg/voicy
+
+Base model: Qwen/Qwen3-TTS-12Hz-1.7B-Base (Apache License 2.0)
+  Qwen Team / Alibaba Cloud
+  https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
+  Base weights are downloaded separately and are not included in this repository.
+
+Changes: one additional LoRA training epoch on 3,407 Russian LibriSpeech
+utterances from five readers, using 9–60 second same-reader reference recordings
+and block-text ICL layout. Learning rate 5e-5, rank 16, alpha 32.
+
+Training data attribution:
+  Russian LibriSpeech (OpenSLR 96), prepared by istupakov,
+  https://huggingface.co/datasets/istupakov/russian_librispeech
+  Dataset card license: Creative Commons Attribution 4.0 International
+  https://creativecommons.org/licenses/by/4.0/
+  No dataset recordings or transcripts are redistributed here.
+
+Runtime dependencies (installed separately, not relicensed by this project):
+  MLX-Audio — Prince Canuma and contributors, MIT
+  https://github.com/Blaizzy/mlx-audio
+  RUAccent — Den4ikAI and contributors, MIT
+  https://github.com/Den4ikAI/ruaccent
+  MLX conversion/tokenizer assets — mlx-community
+  https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-8bit
+
+No reference voice, speaker embedding, or personal conversation is bundled.
